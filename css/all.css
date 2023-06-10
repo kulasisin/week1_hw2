@@ -1,0 +1,414 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #3f5d45;
+  text-decoration: none;
+}
+
+body {
+  color: #3f5d45;
+  font-family: PingFang TC, Semibold;
+  list-style: none;
+}
+img {
+  display: block;
+}
+.container {
+  width: 940px;
+  margin: auto;
+}
+.header {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header h1 a {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg");
+  display: block;
+  height: 99%;
+  width: 219.5px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu {
+  display: flex;
+}
+
+.menu a {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.menu a:hover {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+
+.main {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.asidetitle {
+  font-size: 24px;
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+
+.aside {
+  width: 300px;
+  line-height: 65px;
+  text-align: center;
+  font-size: 24px;
+}
+.aside li a {
+  font-size: 24px;
+  display: block;
+  border: 1px solid #eaf0ed;
+  padding: 16px 0;
+  color: #3f5d45;
+}
+
+.aside li a:hover {
+  background-color: #eaf0ed;
+}
+
+.aside li {
+  margin-bottom: -1px;
+}
+
+.productList {
+  width: 620px;
+  margin: 0px;
+}
+
+.productList-card .tag {
+  font-size: 16px;
+  color: #eaf0ed;
+  background-color: #3f5d45;
+  writing-mode: vertical-lr;
+  letter-spacing: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+
+.productList-card {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.productList-card li {
+  width: 300px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.productList-card .heart {
+  position: absolute;
+  top: 19px;
+  right: 22px;
+  font-size: 20px;
+}
+
+.productList-card-body {
+  display: flex;
+  border-left: 1px solid #eaf0ed;
+  border-right: 1px solid #eaf0ed;
+  border-bottom: 1px solid #eaf0ed;
+  line-height: 56px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.productList-card-body h2 {
+  text-align: center;
+  width: 173px;
+}
+
+.productList-card-body span {
+  width: 127px;
+  border-left: 1px solid #eaf0ed;
+  font-family: PingFang TC, Light;
+}
+
+.productList-card-cart a {
+  font-size: 24px;
+  display: block;
+  line-height: 65px;
+  width: 300px;
+  background-color: #eaf0ed;
+  text-align: center;
+}
+.productList-card-cart a:hover {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+
+.paginationList {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.paginationList a {
+  border: 1px solid #eaf0ed;
+  width: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+
+.paginationList a:hover {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+
+.mailsection {
+  background-color: #3f5d45;
+  margin-top: 60px;
+}
+
+.mailsection-body {
+  display: flex;
+  width: 780px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.mailinfo {
+  display: flex;
+  align-items: center;
+  padding-top: 38px;
+  color: #eaf0ed;
+  font-size: 24px;
+  font-family: Helvetica Neue, Regular;
+}
+
+.mailinfo img {
+  width: 40px;
+  padding-right: 20px;
+}
+
+.inputsection {
+  display: flex;
+  margin-top: 30px;
+  width: 380px;
+  line-height: 56px;
+  background-color: #eaf0ed;
+  align-items: center;
+}
+
+.inputsection .envelope {
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inputsection input {
+  line-height: 56px;
+  background-color: transparent;
+  border: 0px;
+  font-size: 20px;
+}
+
+.inputsection button {
+  font-size: 16px;
+  background-color: #ffe180;
+  display: block;
+  height: 100%;
+  width: 40%;
+  border: 0px;
+  color: #3f5d45;
+}
+
+.inputsection button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #eaf0ed;
+}
+.footer-inner {
+  width: 780px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  padding-top: 40px;
+}
+
+.description img {
+  padding-bottom: 115.5px;
+}
+
+.description p,
+li {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Helvetica;
+}
+
+.description ul {
+  margin-bottom: 30px;
+}
+.description a:hover {
+  opacity: 70%;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  margin-right: 8px;
+}
+
+.footer-rightside {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-rightside img {
+  align-self: flex-end;
+  padding-bottom: 46.31px;
+}
